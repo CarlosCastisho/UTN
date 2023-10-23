@@ -1,0 +1,99 @@
+<div class="formul">
+  <header class="header">
+    <h1 id="title" class="title-formul">Incripción UTN</h1>
+    <p id="description" class="desc title-formul">Somos la Universidad N°1 en latino america</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-grupo">
+      <label id="name-label" for="name">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          placeholder="Nombre completo"
+         >
+    </div>
+    <div class="form-grupo">
+      <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          mane="email"
+          id="email"
+          class="form-control"
+          placeholder="@gmail.com"
+          required
+        >
+    <div class="form-grupo">
+      <label id="number-label" for="number">Edad</label>
+        <input
+          type="number" required
+          name="edad"
+          id="number"
+          min="18"
+          max="99"
+          class="form-control"
+          placeholder="AA"
+        >
+    </div>
+    <div class="form-grupo">
+      <p>Carrera Universitaria</p>
+      <select id="dropdown" name="carrera" class="form-control" required>
+        <option disabled selected value>Seleccione una Carrera</option>
+        <option value="sistemas">Ing. Sistemas</option>
+        <option value="civil">Ing. Civil</option>
+        <option value="mecanica">Ing. Mecanica</option>
+        <option value="naval">Ing. Naval</option>
+        <option value="quimica">Ing. Quimica</option>
+        <option value="electrica">Ing. Electrica</option>
+        <option value="industrial">Ing. Industrial</option>
+     </select>
+    </div>
+    <div class="form-grupo">
+      <p>En que turno desea estudiar</p>
+      <label>
+        <input
+          name="turno"
+          value="Mañana"
+          type="radio"
+          class="input-radio"
+          checked>Mañana
+      </label>
+      <label>
+        <input
+          name="turno"
+          value="Tarde"
+          type="radio"
+          class="input-radio"
+          >Tarde
+      </label>
+      <label>
+        <input
+          name="turno"
+          value="Noche"
+          type="radio"
+          class="input-radio"
+          >Noche
+      </label>
+    <div class="from-grupo">
+      <p>Nacionalidad</p>
+        <select id="nacio-nali" name="nacionali" class="form-grupo" required>
+          <option disabled selected value>Selecciona</option>
+          <option value="arg">Argentina</option>
+          <option value="pe">Peruana</option>
+          <option value="otras">Otras</option>
+        </select>
+    </div>
+    <div class="form-grupo">
+      <p>Comentarios</p>
+        <textarea
+          id="coment"
+          class="input-textarea" 
+          name="coment"
+          placeholder="Ingrese su comentario...">
+        </textarea>
+    </div>
+    <div class="form-grupo">
+      <button type="submit" id="submit" class="submit-button">Enviar</button>
+    </div>
+  </form>
+</div>           
